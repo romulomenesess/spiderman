@@ -1,0 +1,95 @@
+@import url(./reset.css);
+@import url(./global.css);
+@import url(../components/nav.css);
+@import url(../components/pills.css);
+@import url(../components/link-button.css);
+@import url(../components/gallery.css);
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.wrapper video {
+    position: fixed;
+    width: 100%;
+}
+
+.wrapper .leftcolumn {
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wrapper .maincontent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-left: 130px;
+}
+
+.wrapper .maincontent-top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrapper .maincontent-bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper .maincontent .logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.wrapper .maincontent-top .description {
+    background-color: rgba(0,0,0,0.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wrapper .maincontent-top .description .description-text p{
+    color: #fff;
+    line-height: 170%;
+}
+
+.wrapper .maincontent-top .description .pills {
+    margin-bottom: 20px;
+}
+
+.wrapper .maincontent .links {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.wrapper .maincontent .links ul {
+    display: flex;
+}
+
+.spiderman-01-01 {
+    background-image: url('../imgs/Tobey/movie1/background.png');
+    background-size: cover;
+}
+.spiderman-01-02 {
+    background-image: url('../imgs/Tobey/movie2/background.png');
+    background-size: cover;
+}
+.spiderman-01-03 {
+    background-image: url('../imgs/Tobey/movie3/background.png');
+    background-size: cover;
+}

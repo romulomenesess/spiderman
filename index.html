@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <title>Spider-Man | Multiverse</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li class="menu-item">
+                <a href="/">Página Inicial</a>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/tobey/movie1.html">Tobey Maguire</a>
+            </li>
+            <li class="menu-item">
+                <img src="./assets/imgs/icons/spider.svg" alt="ícone de aranha" class="menu-icon"></img>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/andrew/movie1.html">Andrew Garfield</a>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/tom/movie1.html">Tom Holland</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="./pages/tobey/movie1.html" class="card" id="spiderman-01">
+                <img src="/assets/imgs/pic-sm-bg-01.jpg"  class="card-background">
+                <img src="/assets/imgs/spider-man-01.png" alt="Tobey Maguire" class="card-img">
+                <h2 class="card-titulo">Tobey Maguire</h2>
+            </a>
+            <a href="./pages/tom/movie1.html" class="card" id="spiderman-02">
+                <img src="/assets/imgs/pic-sm-bg-02.jpg" class="card-background">
+                <img src="/assets/imgs/spider-man-02.png" alt="Tom Holland" class="card-img">
+                <h2 class="card-titulo">Tom Holland</h2>
+            </a>
+            <a href="./pages/andrew/movie1.html" class="card" id="spiderman-03">
+                <img src="/assets/imgs/pic-sm-bg-03.jpg" class="card-background">
+                <img src="/assets/imgs/spider-man-03.png" alt="Andrew Garfield" class="card-img">
+                <h2 class="card-titulo">Andrew Garfield</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="controller">
+        <div id="1" class="controller-button controller-button--active" onclick="selectCarouselItem(this)">01</div>
+        <div id="2" class="controller-button" onclick="selectCarouselItem(this)">02</div>
+        <div id="3" class="controller-button" onclick="selectCarouselItem(this)">03</div>
+        <div class="controller-line"></div>
+    </div>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
